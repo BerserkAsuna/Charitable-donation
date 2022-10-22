@@ -1,0 +1,22 @@
+1.npm安装
+# 通过 npm 安装
+npm i @vant/weapp -S --production
+
+# 通过 yarn 安装
+yarn add @vant/weapp --production
+
+# 安装 0.x 版本
+npm i vant-weapp -S --production
+
+2.构建npm包
+打开微信开发者工具，点击 工具 -> 构建 npm，并勾选 使用 npm 模块 选项，构建完成后，即可引入组件。
+
+3.云开发环境初始化
+app.js中的
+ wx.cloud.init({
+     env:"这部分替换成现在用的环境（打开云开发最上面的e_____)"
+   }
+
+   )
+4.云开发工具的使用：先找到官网小程序注册账号之后打开微信小程序开发者工具扫码登录
+5.需要优化：界面排版、图片上传到云开发云存储中才能在手机中进行模拟。

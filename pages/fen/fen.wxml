@@ -1,0 +1,14 @@
+<view class="style">请对物品进行评价</view>
+<view class="ff">
+<van-circle value="{{ value }}" color="{{ gradientColor }}" size="120"  stroke-width="10" text="{{value}}分" />
+</view>
+<view class="q">
+<van-button  color="#ff0000" type="primary" size="mini" bind:click="increase">增加</van-button>
+<van-button type="primary" size="mini" bind:click="reduce">减少</van-button>
+</view>
+<view class="qq">
+<van-button type="primary" size="large" bind:click="submit">提交评价</van-button>
+</view>
+<view class="qq">
+<van-button type="primary" size="large" bind:click="angry">对物品不满意请点击</van-button>
+</view>

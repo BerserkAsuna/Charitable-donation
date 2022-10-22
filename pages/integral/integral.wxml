@@ -1,0 +1,20 @@
+<!--pages/integral/integral.wxml-->
+<view class="bu">
+<view >我的积分:{{fraction}}</view>
+<view bindtap="click">点击此处进行贫困认证</view>
+</view>
+<van-divider contentPosition="center" textColor="#1989fa" fontsize="20" borderColor="#1989fa">以下为积分兑换商品</van-divider>
+<van-grid column-num="2" border="{{ true }}" square gutter="{{ 10 }}">
+  <van-grid-item use-slot wx:for="{{ 4 }}" wx:for-item="index" >
+    <image
+      style="width: 100%; height: 90px;"
+      src="/photo/{{ index + 28 }}.png"
+    />
+    <view bindtap="take" data-name="{{index+28}}">点击兑换</view>
+  </van-grid-item>
+</van-grid>
+<van-divider contentPosition="center" textColor="#1989fa" fontsize="20" borderColor="#1989fa">以下为兑换学时区域</van-divider>
+<view>20积分为1学时</view>
+<view bindtap="click1" class="bu">点击此处兑换学时</view>
+<view>已兑换的学时：{{a}}</view>
+

@@ -1,0 +1,31 @@
+<block wx:if="{{number.length}}">
+<view wx:for="{{number}}" wx:for-item="i" wx:for-index="j">
+<van-card
+  title="{{array1[i-1].name}}"
+>
+<view slot="thumb" >
+    <image wx:if='{{i}}' src="/photo/{{i}}.png"></image>
+  </view> 
+  <view slot="footer">
+    <block wx:if="{{q[j].status^q[j].away}}">
+    <van-button   size="mini" bind:click="click1" data-name1="{{i}}">拿走物品</van-button>
+    </block>
+    <block wx:else="{{q[j].status^q[j].away}}">
+    <van-button   disabled size="mini" bind:click="click1" data-name1="{{i}}">拿走物品</van-button>
+    </block> 
+    <van-button size="mini"bind:click="click2" data-name2="{{q[j]._id}}">查看详情</van-button>
+    <block wx:if="{{q[j].status}}">
+    <van-button size="mini" bind:click="click3" data-name3="{{q[j]._id}}">反馈</van-button>
+    </block>
+    <block wx:else="{{q[j].status}}">
+    <van-button disabled size="mini" bind:click="click3" data-name3="{{j}}">反馈</van-button>
+    </block>
+  </view>
+  <view slot="desc">{{q[j].time}}</view>
+</van-card>
+</view>
+<van-card></van-card>
+</block>
+<block wx:else="{{number.length}}"> 
+<view class="middle">无获得物品</view>
+</block>

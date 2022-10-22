@@ -1,0 +1,40 @@
+.type{
+background-color: #01ccb6;
+color: white;
+padding: 40rpx;
+}
+.type .user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.user .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.user .row .avatar{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+}
+.user .row .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200rpx;
+}
+.user .row .nam{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    width: 200rpx;
+}
+
+
+
+
+
+

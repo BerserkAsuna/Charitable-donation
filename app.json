@@ -1,0 +1,59 @@
+{
+    "pages": [
+        "pages/begin/begin",
+        "pages/sort/sort",
+        "pages/buycar/buycar",
+        "pages/my/my",
+        "pages/login/login",
+        "pages/register/register",
+        "pages/revise/revise",
+        "pages/fundraiser/fundraiser",
+        "pages/record/record",
+        "pages/password/password",
+        "pages/goods/goods",
+        "pages/nume/nume",
+        "pages/QRcode/QRcode",
+        "pages/state1/state1",
+        "pages/integral/integral",
+        "pages/poor/poor",
+        "pages/commodity/commodity",
+        "pages/fen/fen",
+        "pages/state2/state2"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#90EE90",
+        "navigationBarTitleText": "爱心捐赠",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "selectedColor": "#FFB5C5",
+        "list": [
+            {
+                "pagePath": "pages/begin/begin",
+                "text": "首页",
+                "iconPath": "photo/begin.png",
+                "selectedIconPath": "photo/begin.png"
+            },
+            {
+                "pagePath": "pages/sort/sort",
+                "text": "分类",
+                "iconPath": "photo/sort.png",
+                "selectedIconPath": "photo/sort.png"
+            },
+            {
+                "pagePath": "pages/buycar/buycar",
+                "text": "捐赠车",
+                "iconPath": "photo/buycar.png",
+                "selectedIconPath": "photo/buycar.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "photo/my.png",
+                "selectedIconPath": "photo/my.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

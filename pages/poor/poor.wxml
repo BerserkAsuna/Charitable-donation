@@ -1,0 +1,15 @@
+<!--pages/poor/poor.wxml-->
+<van-field
+    label="理由"
+    type="textarea"
+    placeholder="请输入申请原因"
+    autosize
+    border="{{ true }}"
+    bind:input="uu"
+  />
+  <view>最多上传三张照片</view>
+ <van-uploader  bind:after-read="afterRead"file-list="{{ fileList }}" deletable="{{ true }}" bind:delete="qq" max-count="3"/>
+ <view class="local">
+  <van-button type="primary" size="normal" color="#008000" bind:click="click">提交请求</van-button>
+ </view>
+ 

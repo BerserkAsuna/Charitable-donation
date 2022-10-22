@@ -1,0 +1,8 @@
+<!--pages/state2/state2.wxml-->
+<view>物品状态：</view>
+<van-steps
+  steps="{{ steps }}"
+  active="{{ active }}"
+  direction="vertical"
+  active-color="#228b22"
+/>

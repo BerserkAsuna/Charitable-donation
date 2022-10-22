@@ -1,0 +1,20 @@
+<view class='section__title'>请选择物品种类与数量:</view>
+<picker mode="multiSelector" bindchange="bindSemesterChange" bindcolumnchange="bindColumnChange" value="{{index}}" range="{{semester}}">
+    <view class="select">点击可以选择：需要{{'\t\t'+semester[0][index[0]]+'\t'+semester[1][index[1]]+'个'}}</view>
+  </picker>
+  <van-cell-group>
+  <van-field
+    value="{{ message }}"
+    label="理由"
+    type="textarea"
+    placeholder="请输入需要的原因"
+    autosize
+    border="{{ true }}"
+    bind:input="uu"
+    maxlength="50"
+    show-word-limit
+    type="textarea"
+    autosize
+  />
+</van-cell-group>
+<van-button type="primary" size="large" bind:click="click">提交</van-button>

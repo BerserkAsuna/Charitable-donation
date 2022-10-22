@@ -1,0 +1,6 @@
+/* pages/integral/integral.wxss */
+.bu {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}

@@ -1,0 +1,5 @@
+/* pages/register/register.wxss */
+.local{
+    display: flex;
+    justify-content: space-around;
+}

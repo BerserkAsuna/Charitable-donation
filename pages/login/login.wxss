@@ -1,0 +1,11 @@
+.small{
+    font-size: 25rpx;
+    color:#808080;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.local{
+    display: flex;
+    justify-content: center;
+}

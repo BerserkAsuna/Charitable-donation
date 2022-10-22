@@ -1,0 +1,5 @@
+/* pages/nume/nume.wxss */
+.local{
+    display: flex;
+    justify-content: space-around;
+}

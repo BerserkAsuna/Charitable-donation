@@ -1,0 +1,13 @@
+<!--pages/goods/goods.wxml-->
+<image src="/photo/{{order}}.png" style="width:100%" mode="widthFix"></image>
+<text>物品简介：{{public}}\n</text>
+<text>{{message}}</text>
+<van-goods-action>
+  <van-goods-action-icon icon="cart-o" text="捐赠车" bind:click="onClickIcon" />
+  <van-goods-action-button
+    text="加入捐赠车"
+    type="warning"
+    bind:click="onClickButton"
+  />
+  <van-goods-action-button text="立即捐赠" bind:click="onClickButton1" />
+</van-goods-action>

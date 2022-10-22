@@ -1,0 +1,42 @@
+<block wx:if="{{number.length}}">
+<view wx:for="{{number}}" wx:for-item="i" wx:for-index="j">
+  <van-swipe-cell
+  id="swipe-cell"
+  right-width="{{ 65 }}"
+  left-width="{{ 0}}"
+  async-close
+  bind:close="onClose" 
+  data-name="{{j}}"
+>
+<van-card
+  title="{{array[i-1].name}}"
+>
+<view slot="thumb" >
+    <image src="/photo/{{i}}.png"></image>
+  </view> 
+  <view slot="footer">
+    <van-stepper value="{{quantity[j]}}"  theme="round" bind:change="onChange1" button-size="20px" min="1" data-name="{{j}}" /> 
+  </view>
+</van-card>
+<view slot="right">删除</view>
+</van-swipe-cell>
+</view>
+<van-card></van-card>
+</block>
+<block wx:else="{{number.length}}"> 
+<view class="middle">请先添加物品</view>
+</block>
+<van-submit-bar
+  price="{{sum}}"
+  decimal-length="0"
+  currency=""
+  label="物品数量:"
+  button-text="全部捐赠"
+  bind:submit="onClickButton"
+  tip="{{ true }}"
+> 
+<van-checkbox value="{{ checked }}" bind:change="onChange">全选</van-checkbox>
+</van-submit-bar>
+
+
+

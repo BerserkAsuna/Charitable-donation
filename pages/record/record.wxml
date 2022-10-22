@@ -1,0 +1,20 @@
+<block wx:if="{{number.length}}">
+<view wx:for="{{number}}" wx:for-item="i" wx:for-index="j">
+<van-card
+  title="{{array1[i-1].name}}"
+>
+<view slot="thumb" >
+    <image wx:if='{{i}}' src="/photo/{{i}}.png"></image>
+  </view> 
+  <view slot="footer">
+    <van-button size="mini" bind:click="click1" data-name="{{j}}">二维码</van-button>
+    <van-button size="mini"bind:click="click2" data-name1="{{j}}">查看详情</van-button>
+  </view>
+  <view slot="desc">{{q[j].time}}</view>
+</van-card>
+</view>
+<van-card></van-card>
+</block>
+<block wx:else="{{number.length}}"> 
+<view class="middle">无捐赠物品</view>
+</block>

@@ -1,0 +1,20 @@
+/* pages/fen/fen.wxss */
+.style {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    background-color:blueviolet;
+}
+.ff {
+    margin:50rpx;
+    display: flex;
+    justify-content: center;
+    background-color: darkkhaki;
+}
+.q {
+    display: flex;
+    justify-content: space-around;
+}
+.qq {
+    margin:20rpx;
+}

@@ -1,0 +1,62 @@
+<!--pages/my/my.wxml-->
+<view class="type" >
+   <view class="user">
+      <view class="row">
+        <image  class="avatar" src="/photo/dog.png"></image>
+          <view class="nam" wx:if="{{phone}}">{{phone}}</view>  
+          <view class="name" wx:else="{{phone}}">
+        <navigator url="/pages/login/login">登录</navigator>
+        |
+        <navigator url="/pages/register/register">注册</navigator>
+        </view>
+        
+      </view>
+   </view>
+</view>
+<van-cell
+  is-link
+  title="个人资料修改"
+  bind:click="tiao4"
+  size="large"
+/>
+<van-cell
+  is-link
+  title="我的捐赠记录"
+  link-type="navigateTo"
+  url="/pages/record/record"
+  size="large"
+/>
+<van-cell
+  is-link
+  title="我要募捐"
+  bind:click="tiao3"
+  size="large"
+/>
+<van-cell
+  is-link
+  title="修改密码"
+  size="large"
+  bind:click="tiao2"
+/>
+<van-cell
+  is-link
+  title="我的积分"
+  bind:click="tiao1"
+  size="large"
+/>
+<van-cell
+  is-link
+  title="我收到的物品"
+  link-type="navigateTo"
+  url="/pages/commodity/commodity"
+  size="large"
+/>
+<van-cell
+  is-link
+  title="我的二维码" 
+  size="large"
+  bind:click="tiao"
+/>
+<van-button type="primary" size="large"  color="#FF0000"bind:click="back"> 退出</van-button>
+
+ 

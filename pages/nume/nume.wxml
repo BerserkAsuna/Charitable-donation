@@ -1,0 +1,13 @@
+<!--pages/nume/nume.wxml-->
+<view class="section">
+  <view class="section__title">请选择捐赠数量</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择数量：{{array[index]}}个
+    </view>
+  </picker>
+</view>
+<view class="local">
+<van-button type="primary" size="small" color="#008000" bindclick="add">确定捐赠</van-button>
+<van-button type="primary" size="small" color="#008000" bindclick="click">取消捐赠</van-button>
+</view>
